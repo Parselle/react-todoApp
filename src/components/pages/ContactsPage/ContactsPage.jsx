@@ -15,7 +15,7 @@ export default class ContactsPage extends Component {
         </p>
 
         <div className="contacts__links">
-          <a href="https://github.com/Parselle" target="_blank">
+          <a href="https://github.com/Parselle/react-todoApp" target="_blank">
             <Button icon="link">Github</Button>
           </a>
           <a href="mailto:parselledev@gmail.com">
