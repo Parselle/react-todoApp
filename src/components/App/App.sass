@@ -1,0 +1,25 @@
+.app
+  display: grid
+  grid-template-columns: minmax(200px, 400px)
+  justify-content: center
+  align-content: start
+  padding: 30px 10px
+  background: $color-grey-dark
+  min-height: 100vh
+
+  +media-mx(500px)
+    padding: 10px
+
+  &__filter
+    display: grid
+    grid-template-columns: auto 40px
+
+  &__content
+    display: grid
+    align-items: start
+    background: $color-grey
+    padding: 15px
+    grid-gap: 10px
+
+  &__text
+    color: white

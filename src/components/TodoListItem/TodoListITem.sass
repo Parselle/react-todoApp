@@ -1,0 +1,47 @@
+.todo__list
+  
+  .list
+    &__item
+      display: grid
+      grid-template-columns: 3px auto 30px
+      grid-gap: 10px
+      align-items: center
+      width: 100%
+      padding: 10px 0
+      min-height: 40px
+
+      &:not(:nth-last-of-type)
+        border-bottom: 2px solid #f2f2f2
+
+      &:nth-of-type(1)
+        padding-top: 0
+
+      &::before
+        content: ''
+        display: grid
+        width: 3px
+        height: 100%
+        border-radius: 5px
+        background: $color-success
+
+      &.completed
+        .list__title,
+        .list__desc
+          color: lighten($color-grey, 10%)
+
+        &::before
+          background: $color-grey
+
+    &__title
+      color: white
+
+    &__desc
+      color: lighten($color-grey, 40%)
+
+    &__control
+      display: grid
+      align-self: start
+      transition: all 0.3s
+
+    &__error
+      padding: 20px 10px

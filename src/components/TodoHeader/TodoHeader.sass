@@ -1,0 +1,36 @@
+.todo__header
+  position: relative
+  display: grid
+  grid-gap: 10px
+  background: $color-grey
+  background-size: cover
+  min-height: 50px
+
+  .header
+    &__content
+      display: grid
+      grid-template-columns: auto auto
+      align-content: center
+      justify-content: start
+      width: 100%
+      grid-gap: 10px
+      padding: 10px 15px
+
+      +media-mx(500px)
+        padding: 10px
+      
+    &__title
+      color: white
+      font-weight: bold
+
+    &__progress
+      align-self: end
+      justify-self: end
+      padding: 5px 10px
+      background: $color-grey-dark
+      color: rgba(white, 0.7)
+      font-size: 14px
+      border-radius: 3px
+
+      +media-mx(500px)
+        font-size: 12px
