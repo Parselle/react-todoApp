@@ -1,6 +1,6 @@
 export default class ApiService {
 
-  _apiBase = 'http://5c164d46e6694800138963b2.mockapi.io';
+  _apiBase = 'https://5c164d46e6694800138963b2.mockapi.io';
 
   getResource = async (url) => {
     const res = await fetch(`${this._apiBase}${url}`);
